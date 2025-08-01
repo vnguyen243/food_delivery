@@ -38,8 +38,8 @@ A responsive and modern frontend for a food delivery web app, built with **Vite*
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/food-delivery-frontend.git
-cd food-delivery-frontend
+git clone https://github.com/vnguyen243/food_delivery.git
+cd frontend
 
 # 2. Install dependencies
 npm install
