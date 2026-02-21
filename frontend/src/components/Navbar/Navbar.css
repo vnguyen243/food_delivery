@@ -13,7 +13,7 @@
     display: flex;
     list-style: none;
     gap: 20px;
-    color: #49557e;
+    color: #2F131E;
     font-size: 18px;
 }
 
@@ -25,22 +25,22 @@
 .navbar button{
     background: transparent;
     font-size: 16px;
-    color: #49557e;
-    border: 1px solid tomato;
+    color: #2F131E;
+    border: 1px solid #DE3C4B;
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
 
 }
 
 .navbar button:hover{
-    background-color: #fff4f2;
+    background-color: #efd3cb;
 }
 
 .navbar .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
+    border-bottom: 2px solid #2F131E;
 }
 
 .navbar li{
@@ -55,8 +55,55 @@
     position: absolute;
     min-width: 10px;
     min-height: 10px;
-    background-color: tomato;
+    background-color: #DE3C4B;
     border-radius: 5px;
     top: -8px;
     right: -8px;
+}
+/* make the web responsive */
+@media (max-width:1050px) {
+    .navbar .logo{
+        width: 140px;
+
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar .logo{
+        width: 120px;
+
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:750px) {
+    .navbar-menu{
+        display: none;
+    }
 }
